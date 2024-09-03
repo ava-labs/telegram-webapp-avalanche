@@ -1,4 +1,4 @@
-# twa-template
+# telegram-webapp-avalanche
 
 > Starter template for a new TWA interacting with the Avalanche Fuji blockchain using the [Thirdweb SDK](https://portal.thirdweb.com/react/v5/connecting-wallets/ui-components)
 
@@ -35,8 +35,8 @@ The project is highly-opinionated, and there are many other alternate routes it 
 
 4. Create a new bot with [botfather](https://t.me/botfather)
    1. Type `/newbot`
-   2. Choose a name for your bot, e.g. `My AVAX TWA`
-   3. Choose a username for your bot, e.g. `my_avax_twa_482765_bot`
+   2. Choose a name for your bot, e.g. `My Avalanche TWA`
+   3. Choose a username for your bot, e.g. `my_avalanche_twa_482765_bot`
    4. Take note of the access token, e.g. `5712441624:AAHmiHvwrrju1F3h29rlVOZLRLnv-B8ZZZ`
    5. Run `yarn configbot` to link your bot to the webapp
 
