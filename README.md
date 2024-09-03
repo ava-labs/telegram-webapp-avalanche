@@ -30,9 +30,10 @@ The project is highly-opinionated, and there are many other alternate routes it 
    1. Choose a name for your repo
    2. `**IMPORTANT!!**` mark "Include all branches", otherwise github pages deployment will not work.
 
-2. Clone this repo and run `yarn`
+2. Clone this repo and run `yarn` to install packages
+3. Replace `clientID` in `src/App.tsx` with your own client ID [from Thirdweb](https://thirdweb.com/dashboard/settings/api-keys)
 
-3. Create a new bot with [botfather](https://t.me/botfather)
+4. Create a new bot with [botfather](https://t.me/botfather)
    1. Type `/newbot`
    2. Choose a name for your bot, e.g. `My AVAX TWA`
    3. Choose a username for your bot, e.g. `my_avax_twa_482765_bot`
