@@ -25,7 +25,11 @@ const AppContainer = styled.div`
   margin: 0 auto;
 `;
 
-export const client = createThirdwebClient({ clientId: "1822bd9eccc84818670b3a1794ada957" });
+if (!import.meta.env.VITE_THIRDWEB_CLIENT_ID) {
+  throw new Error("THIRDWEB_CLIENT_ID is required");
+}
+
+export const client = createThirdwebClient({ clientId: import.meta.env.VITE_THIRDWEB_CLIENT_ID });
 
 const wallets = [
   inAppWallet({

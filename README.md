@@ -31,7 +31,7 @@ The project is highly-opinionated, and there are many other alternate routes it 
    2. `**IMPORTANT!!**` mark "Include all branches", otherwise github pages deployment will not work.
 
 2. Clone this repo and run `yarn` to install packages
-3. Replace `clientID` in `src/App.tsx` with your own client ID [from Thirdweb](https://thirdweb.com/dashboard/settings/api-keys)
+3. Create a `.env` in the project root and set `VITE_THIRDWEB_CLIENT_ID` with your own client ID [from Thirdweb](https://thirdweb.com/dashboard/settings/api-keys)
 
 4. Create a new bot with [botfather](https://t.me/botfather)
    1. Type `/newbot`
