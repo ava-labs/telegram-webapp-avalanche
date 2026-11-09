@@ -7,13 +7,19 @@ on:
     branches:
       - main
 
+permissions: {}
+
 jobs:
   build:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@28c7f3d2b5162b5ddd3dfd9a45aa55eaf396478b # v2.3.1
+        with:
+          persist-credentials: false
       - name: install dependencies
         run: npm install --legacy-peer-deps
       - name: Build
@@ -25,6 +31,3 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: dist # The folder the action should deploy.
-
-permissions:
-  contents: write
